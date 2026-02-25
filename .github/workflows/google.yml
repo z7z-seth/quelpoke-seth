@@ -20,6 +20,6 @@ jobs:
         with: 
           project_id: cs-poc-hpzdycpiqjyvinhrczvlwcn
       
-      - run: gloud auth configure-docker europe-west9-docker.pkg.dev
+      - run: gcloud auth configure-docker europe-west9-docker.pkg.dev
       - run: docker build -t europe-west9-docker.pkg.dev/cs-poc-hpzdycpiqjyvinhrczvlwcn/student-seth .
       - run: docker push europe-west9-docker.pkg.dev/cs-poc-hpzdycpiqjyvinhrczvlwcn/student-seth/quelpoke:latest
