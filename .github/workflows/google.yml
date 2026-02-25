@@ -18,7 +18,7 @@ jobs:
           credentials_json: ${{ secrets.service_account }}
       - uses: google-github-actions/setup-gcloud@v2
         with: 
-          project_id: cs-poc-hpzdycpiqjyvinhrczvlwcn 
+          project_id: cs-poc-hpzdycpiqjyvinhrczvlwcn
       
       - run: gloud auth configure-docker europe-west9-docker.pkg.dev
       - run: docker build -t europe-west9-docker.pkg.dev/cs-poc-hpzdycpiqjyvinhrczvlwcn/student-seth .
