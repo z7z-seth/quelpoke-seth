@@ -27,6 +27,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./github.com-mseth-quelpoke/quelpoke # Où se trouve le Dockerfile (ici, à la racine)
+          context: ./quelpoke/Dockerfile # Où se trouve le Dockerfile (ici, à la racine)
           push: true
           tags: z7zseth/goseth:latest # Le nom de votre image
