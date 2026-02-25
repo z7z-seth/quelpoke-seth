@@ -27,6 +27,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./.github/workflows/Dockerfile # Où se trouve le Dockerfile (ici, à la racine)
+          context: .
+          file: dockerfile # Où se trouve le Dockerfile (ici, à la racine)
           push: true
           tags: z7zseth/goseth:latest # Le nom de votre image
